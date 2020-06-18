@@ -9,7 +9,7 @@ const Pregunta = ({ guardarPresupuesto, guardarRestante, actualizarPregunta }) =
 
     // Funcion que lee el presupuesto
     const definirPresupuesto = e => {
-        guardarCantidad( parseInt(e.target.value) );
+        guardarCantidad( parseInt(e.target.value, 10) );
     };
 
     // Submit para definir el presupuesto
